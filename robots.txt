@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /mentions-legales.html
 
-Sitemap: https://vanteaux-limoges.fr/sitemap.xml
+Sitemap: https://www.vanteaux-limoges.fr/sitemap.xml
