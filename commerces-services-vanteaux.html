@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commerces et Services à Vanteaux Limoges – Boulangeries, Supermarchés, Pharmacies</title>
+  <meta name="description" content="Tous les commerces et services du quartier de Vanteaux à Limoges : boulangeries, supermarchés, pharmacies, médecins, restaurants, tabac-presse. La vie quotidienne et la proximité au cœur du sud-ouest de Limoges." />
+  <meta name="keywords" content="commerces Vanteaux Limoges, boulangerie Vanteaux, pharmacie Vanteaux, Super U Perrin, Carrefour City Vanteaux, restaurant Le Vanteaux, tabac Vanteaux Limoges" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://vanteaux-limoges.fr/commerces-services-vanteaux.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --forest: #2d4a2b; --forest-deep: #1f3520; --sage: #8ba888;
+      --sage-light: #c5d5c2; --moss: #5d7c5a; --cream: #faf6ee;
+      --cream-warm: #f3ebd9; --ink: #1a1a17; --ink-soft: #3a3a35;
+      --muted: #6b6b62; --line: rgba(45, 74, 43, 0.12); --radius: 10px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.7; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 48px; background: rgba(31, 53, 32, .96);
+      backdrop-filter: blur(16px); border-bottom: 1px solid rgba(197, 213, 194, .15); }
+    .nav-logo { font-family: 'Fraunces', serif; font-weight: 800; font-size: 1.15rem;
+      color: var(--cream); text-decoration: none; }
+    .nav-logo em { color: var(--sage-light); font-style: italic; font-weight: 400; font-size: 0.85em; }
+    .nav-right { display: flex; gap: 32px; }
+    .nav-link { color: rgba(250, 246, 238, 0.7); text-decoration: none;
+      font-size: 0.82rem; font-weight: 500; transition: color .25s; }
+    .nav-link:hover { color: var(--sage-light); }
+    .nav-cta { background: var(--sage-light); color: var(--forest-deep) !important;
+      padding: 9px 20px; border-radius: 50px; font-weight: 600 !important; }
+
+    .page-hero { padding: 160px 48px 80px;
+      background: linear-gradient(160deg, var(--forest-deep), var(--moss));
+      color: var(--cream); position: relative; overflow: hidden; }
+    .page-hero::before { content: ''; position: absolute; top: -10%; right: -10%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(197,213,194,.12), transparent 70%); }
+    .page-hero-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
+    .breadcrumb { font-size: 0.78rem; color: rgba(250, 246, 238, .55); margin-bottom: 24px; }
+    .breadcrumb a { color: rgba(250, 246, 238, .75); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--sage-light); }
+    .page-tag { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--sage-light); margin-bottom: 20px; font-weight: 600; }
+    .page-hero h1 { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem); line-height: 1.05;
+      letter-spacing: -0.02em; margin-bottom: 22px; }
+    .page-hero h1 em { font-style: italic; color: var(--sage-light); font-weight: 400; }
+    .page-hero-sub { font-size: 1.1rem; color: rgba(250, 246, 238, .8);
+      max-width: 720px; line-height: 1.7; font-weight: 300; }
+
+    main { max-width: 1080px; margin: 0 auto; padding: 80px 32px; }
+    .section-block { margin-bottom: 80px; }
+    .section-block-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 14px; }
+    .section-icon { font-size: 2rem; }
+    .section-block h2 { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: clamp(1.7rem, 3vw, 2.2rem); line-height: 1.15;
+      color: var(--forest-deep); letter-spacing: -0.01em; }
+    .section-block h2 em { font-style: italic; color: var(--moss); font-weight: 400; }
+    .section-block .lead { font-size: 1rem; color: var(--muted); line-height: 1.7;
+      margin-bottom: 36px; max-width: 720px; font-weight: 300; }
+
+    .commerce-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .commerce-grid.three { grid-template-columns: repeat(3, 1fr); }
+
+    .commerce-card { background: #fff; border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 22px 24px;
+      transition: transform .3s, box-shadow .3s, border-color .3s; }
+    .commerce-card:hover { transform: translateY(-3px); border-color: var(--sage);
+      box-shadow: 0 16px 32px rgba(45, 74, 43, .08); }
+    .commerce-name { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 1.1rem; color: var(--forest-deep); margin-bottom: 6px; }
+    .commerce-type { font-size: 0.75rem; color: var(--moss);
+      letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;
+      margin-bottom: 12px; }
+    .commerce-addr { font-size: 0.88rem; color: var(--muted);
+      line-height: 1.5; margin-bottom: 8px; }
+    .commerce-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px;
+      padding-top: 12px; border-top: 1px solid var(--line);
+      font-size: 0.82rem; color: var(--ink-soft); }
+    .commerce-meta-item { display: inline-flex; align-items: center; gap: 4px; }
+
+    .info-block { background: var(--cream-warm); border-left: 3px solid var(--moss);
+      padding: 28px 32px; margin: 32px 0; border-radius: 0 12px 12px 0;
+      font-size: 0.95rem; color: var(--ink-soft); line-height: 1.7; }
+    .info-block strong { color: var(--forest-deep); }
+
+    .related-pages { background: var(--cream-warm); padding: 80px 48px; margin-top: 80px; }
+    .related-inner { max-width: 1180px; margin: 0 auto; }
+    .related-tag { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--moss); margin-bottom: 14px; font-weight: 600; }
+    .related-title { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 1.8rem; color: var(--forest-deep); margin-bottom: 40px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .related-card { background: #fff; border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 28px; text-decoration: none;
+      color: inherit; transition: transform .3s, border-color .3s, box-shadow .3s; }
+    .related-card:hover { transform: translateY(-4px); border-color: var(--sage);
+      box-shadow: 0 16px 32px rgba(45, 74, 43, .1); }
+    .related-card-icon { font-size: 1.7rem; margin-bottom: 12px; display: block; }
+    .related-card-title { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 1.1rem; color: var(--forest-deep); margin-bottom: 8px; }
+    .related-card-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+
+    footer { background: var(--forest-deep); color: var(--cream); padding: 48px;
+      text-align: center; }
+    footer .footer-logo { font-family: 'Fraunces', serif; font-weight: 800;
+      font-size: 1.2rem; color: var(--cream); text-decoration: none;
+      display: inline-block; margin-bottom: 16px; }
+    footer .footer-logo em { color: var(--sage-light); font-style: italic;
+      font-weight: 400; font-size: 0.85em; }
+    .footer-links { display: flex; gap: 24px; justify-content: center;
+      flex-wrap: wrap; margin-bottom: 20px; }
+    .footer-links a { color: rgba(250, 246, 238, .6); text-decoration: none; font-size: 0.85rem; }
+    .footer-links a:hover { color: var(--sage-light); }
+    .footer-copy { font-size: 0.78rem; color: rgba(250, 246, 238, .35); }
+
+    @media (max-width: 900px) {
+      nav { padding: 14px 24px; } .nav-link:not(.nav-cta) { display: none; }
+      .nav-right { gap: 16px; }
+      .page-hero { padding: 130px 24px 60px; }
+      main { padding: 56px 24px; }
+      .commerce-grid, .commerce-grid.three { grid-template-columns: 1fr; }
+      .related-pages { padding: 56px 24px; }
+      .related-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Vanteaux<em>limoges.fr</em></a>
+  <div class="nav-right">
+    <a href="histoire-vanteaux.html" class="nav-link">Histoire</a>
+    <a href="vivre-a-vanteaux.html" class="nav-link">Vivre à Vanteaux</a>
+    <a href="ecoles-universites-vanteaux.html" class="nav-link">Écoles & Universités</a>
+    <a href="commerces-services-vanteaux.html" class="nav-link">Commerces</a>
+    <a href="se-loger-vanteaux.html" class="nav-link nav-cta">Se loger</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="/">Vanteaux Limoges</a> · Commerces &amp; Services</div>
+    <div class="page-tag">La vie de quartier</div>
+    <h1>Tous les <em>commerces et services</em> à Vanteaux</h1>
+    <p class="page-hero-sub">Boulangeries, supermarchés, pharmacies, médecins, restaurants, tabac-presse : la liste des commerces et services qui dessinent le quotidien à Vanteaux et ses abords immédiats.</p>
+  </div>
+</header>
+
+<main>
+  <!-- BOULANGERIES -->
+  <section class="section-block">
+    <div class="section-block-header">
+      <span class="section-icon">🥖</span>
+      <h2>Boulangeries &amp; <em>pâtisseries</em></h2>
+    </div>
+    <p class="lead">Plusieurs artisans boulangers desservent Vanteaux et le sud-ouest de Limoges. Pain de tradition, viennoiseries, sandwichs : la proximité au quotidien.</p>
+
+    <div class="commerce-grid">
+      <div class="commerce-card">
+        <div class="commerce-type">Boulangerie · Pâtisserie</div>
+        <div class="commerce-name">Le Diablotin</div>
+        <p class="commerce-addr">229 rue François Perrin, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 4.2/5</span>
+          <span class="commerce-meta-item">📞 05 55 32 94 69</span>
+        </div>
+      </div>
+      <div class="commerce-card">
+        <div class="commerce-type">Boulangerie · Pâtisserie</div>
+        <div class="commerce-name">Boulangerie Passion du Pain</div>
+        <p class="commerce-addr">45 rue de la Conque, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">📞 05 55 71 91 97</span>
+        </div>
+      </div>
+      <div class="commerce-card">
+        <div class="commerce-type">Boulangerie</div>
+        <div class="commerce-name">La Tovatine N'Go</div>
+        <p class="commerce-addr">34-36 boulevard du Mas Bouyol, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">📞 09 80 58 80 13</span>
+        </div>
+      </div>
+      <div class="commerce-card">
+        <div class="commerce-type">Boulangerie · Sandwicherie</div>
+        <div class="commerce-name">Cokoriko Roussillon</div>
+        <p class="commerce-addr">62 avenue du Roussillon, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 3.8/5</span>
+          <span class="commerce-meta-item">📞 05 44 23 37 94</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPERMARCHÉS -->
+  <section class="section-block">
+    <div class="section-block-header">
+      <span class="section-icon">🛒</span>
+      <h2>Supermarchés &amp; <em>commerces alimentaires</em></h2>
+    </div>
+    <p class="lead">Plusieurs enseignes desservent Vanteaux et ses abords. De la supérette de quartier au supermarché, vos courses se font sans déplacement loin du domicile.</p>
+
+    <div class="commerce-grid">
+      <div class="commerce-card">
+        <div class="commerce-type">Supermarché</div>
+        <div class="commerce-name">Super U Limoges Perrin</div>
+        <p class="commerce-addr">282 rue François Perrin, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 3.9/5</span>
+          <span class="commerce-meta-item">📞 05 55 50 32 50</span>
+          <span class="commerce-meta-item">🕒 8h30 — 19h30</span>
+        </div>
+      </div>
+      <div class="commerce-card">
+        <div class="commerce-type">Supérette de quartier</div>
+        <div class="commerce-name">Carrefour City</div>
+        <p class="commerce-addr">45 rue de la Conque, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 3.6/5</span>
+          <span class="commerce-meta-item">🕒 7h — 22h</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHARMACIES -->
+  <section class="section-block">
+    <div class="section-block-header">
+      <span class="section-icon">💊</span>
+      <h2>Pharmacies &amp; <em>parapharmacies</em></h2>
+    </div>
+    <p class="lead">Le quartier dispose d'une pharmacie identifiée explicitement comme « de Vanteaux », ainsi que d'autres pharmacies dans les rues environnantes. Service de garde organisé en rotation à l'échelle de Limoges.</p>
+
+    <div class="commerce-grid">
+      <div class="commerce-card">
+        <div class="commerce-type">Pharmacie</div>
+        <div class="commerce-name">Pharmacie de Vanteaux</div>
+        <p class="commerce-addr">45 rue de la Conque, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 4.3/5</span>
+          <span class="commerce-meta-item">📞 05 55 01 65 10</span>
+          <span class="commerce-meta-item">🕒 8h30 — 19h15 · ouvert non-stop</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-block">
+      <strong>Pharmacies de garde.</strong> En cas de besoin en soirée, dimanche ou jour férié, une pharmacie de garde est désignée à l'échelle de Limoges. Renseignez-vous via le site <a href="https://monpharmacien.fr/" target="_blank" rel="noopener noreferrer" style="color:var(--moss)">monpharmacien.fr</a> ou en appelant le 3237.
+    </div>
+  </section>
+
+  <!-- MÉDECINS -->
+  <section class="section-block">
+    <div class="section-block-header">
+      <span class="section-icon">🩺</span>
+      <h2>Médecins &amp; <em>professionnels de santé</em></h2>
+    </div>
+    <p class="lead">Le quartier de Vanteaux et ses abords accueillent plusieurs cabinets médicaux. Atout majeur pour les habitants : la proximité du CHU Dupuytren à seulement quelques minutes.</p>
+
+    <div class="commerce-grid three">
+      <div class="commerce-card">
+        <div class="commerce-type">Cabinet médical</div>
+        <div class="commerce-name">Cabinet Médical Les Gémeaux</div>
+        <p class="commerce-addr">10 avenue du Président René Coty, 87100 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 3.6/5</span>
+          <span class="commerce-meta-item">📞 05 55 50 60 50</span>
+        </div>
+      </div>
+      <div class="commerce-card">
+        <div class="commerce-type">CHU · Hôpital universitaire</div>
+        <div class="commerce-name">CHU Dupuytren — Limoges</div>
+        <p class="commerce-addr">2 avenue Martin Luther King, 87042 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">🏥 Établissement de référence</span>
+        </div>
+      </div>
+      <div class="commerce-card">
+        <div class="commerce-type">Annuaire santé</div>
+        <div class="commerce-name">Trouver un praticien</div>
+        <p class="commerce-addr">Sage-femmes, kinésithérapeutes, dentistes, infirmiers libéraux : consultez l'annuaire <strong>Doctolib</strong> ou les <strong>Pages Jaunes</strong> de Limoges 87000 / 87100.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESTAURANTS / CAFÉS -->
+  <section class="section-block">
+    <div class="section-block-header">
+      <span class="section-icon">🍽️</span>
+      <h2>Restaurants, cafés &amp; <em>bars</em></h2>
+    </div>
+    <p class="lead">L'atmosphère de Vanteaux est plus résidentielle que festive, mais le quartier ne manque pas d'adresses pour déjeuner, prendre un café ou dîner. Quelques tables se distinguent par leur qualité.</p>
+
+    <div class="commerce-grid">
+      <div class="commerce-card">
+        <div class="commerce-type">Restaurant gastronomique</div>
+        <div class="commerce-name">Le Vanteaux</div>
+        <p class="commerce-addr">162 boulevard de Vanteaux, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 4.3/5 (309 avis)</span>
+          <span class="commerce-meta-item">📞 05 55 49 01 26</span>
+          <span class="commerce-meta-item">🍴 Cuisine française</span>
+        </div>
+      </div>
+      <div class="commerce-card">
+        <div class="commerce-type">Brasserie · Bar · Tabac</div>
+        <div class="commerce-name">Brasserie Le Campus</div>
+        <p class="commerce-addr">117 rue d'Isle, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 4.2/5 (407 avis)</span>
+          <span class="commerce-meta-item">📞 05 55 01 55 61</span>
+          <span class="commerce-meta-item">🕒 6h — 20h</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABAC PRESSE -->
+  <section class="section-block">
+    <div class="section-block-header">
+      <span class="section-icon">📰</span>
+      <h2>Tabac-presse &amp; <em>services de proximité</em></h2>
+    </div>
+    <p class="lead">Tabac, presse, FDJ, services bancaires de base, dépôt de pain, point relais colis : ces commerces multi-services rendent le quotidien plus simple.</p>
+
+    <div class="commerce-grid">
+      <div class="commerce-card">
+        <div class="commerce-type">Tabac · Presse</div>
+        <div class="commerce-name">Tabac Presse Le Roussillon</div>
+        <p class="commerce-addr">64 bis avenue du Roussillon, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 4.3/5</span>
+          <span class="commerce-meta-item">🕒 6h30 — 19h</span>
+        </div>
+      </div>
+      <div class="commerce-card">
+        <div class="commerce-type">Tabac · Presse · Dépôt</div>
+        <div class="commerce-name">Le Saint Médard</div>
+        <p class="commerce-addr">166 rue François Perrin, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 4.6/5</span>
+          <span class="commerce-meta-item">📞 05 55 50 27 67</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JARDINERIES -->
+  <section class="section-block">
+    <div class="section-block-header">
+      <span class="section-icon">🌷</span>
+      <h2>Jardineries &amp; <em>fleuristes</em></h2>
+    </div>
+    <p class="lead">Vanteaux est un quartier de jardins. Plusieurs adresses servent les habitants pour leurs plantations, leurs aménagements paysagers et leur fleurissement.</p>
+
+    <div class="commerce-grid">
+      <div class="commerce-card">
+        <div class="commerce-type">Jardinerie · Pépinière</div>
+        <div class="commerce-name">Le Jardin de Vanteaux</div>
+        <p class="commerce-addr">90 rue Victorien Sardou, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 4.7/5</span>
+          <span class="commerce-meta-item">📞 05 55 01 42 95</span>
+          <span class="commerce-meta-item">🌿 Plantes &amp; conseils</span>
+        </div>
+      </div>
+      <div class="commerce-card">
+        <div class="commerce-type">Paysagiste</div>
+        <div class="commerce-name">Sanchez Paysage</div>
+        <p class="commerce-addr">37 rue du Puy Chatu, 87000 Limoges</p>
+        <div class="commerce-meta">
+          <span class="commerce-meta-item">⭐ 4.4/5</span>
+          <span class="commerce-meta-item">📞 06 78 54 28 12</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES PUBLICS -->
+  <section class="section-block">
+    <div class="section-block-header">
+      <span class="section-icon">🏛️</span>
+      <h2>Services publics &amp; <em>administrations</em></h2>
+    </div>
+    <p class="lead">Les services publics quotidiens (mairie, poste, services sociaux) restent essentiellement centralisés à Limoges. Les habitants de Vanteaux y accèdent rapidement par bus ou en voiture.</p>
+
+    <div class="commerce-grid three">
+      <div class="commerce-card">
+        <div class="commerce-type">Mairie de Limoges</div>
+        <div class="commerce-name">Hôtel de Ville</div>
+        <p class="commerce-addr">Place Léon Betoulle, 87000 Limoges (centre-ville, à 10-15 min en bus)</p>
+      </div>
+      <div class="commerce-card">
+        <div class="commerce-type">Mairie annexe Ouest</div>
+        <div class="commerce-name">Mairie Ouest — La Borie / Vanteaux</div>
+        <p class="commerce-addr">Mairie de quartier dédiée au secteur Ouest de Limoges (informations, état civil, médiation).</p>
+      </div>
+      <div class="commerce-card">
+        <div class="commerce-type">Pompiers · Urgences</div>
+        <div class="commerce-name">SDIS 87 — 18 / 112</div>
+        <p class="commerce-addr">Caserne principale et casernes secondaires couvrent l'ensemble de l'agglomération.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="info-block">
+    <strong>Pour aller plus loin.</strong> Cette liste est non exhaustive et reflète les principaux commerces et services identifiés à Vanteaux et dans ses abords proches (rue de la Conque, rue François Perrin, boulevard de Vanteaux, avenue du Roussillon, boulevard du Mas Bouyol). De nombreux autres artisans, commerces de spécialité et services de proximité sont disponibles à proximité immédiate.
+  </div>
+</main>
+
+<aside class="related-pages">
+  <div class="related-inner">
+    <div class="related-tag">Pour aller plus loin</div>
+    <h2 class="related-title">D'autres pages sur Vanteaux</h2>
+    <div class="related-grid">
+      <a href="vivre-a-vanteaux.html" class="related-card">
+        <span class="related-card-icon">🌿</span>
+        <div class="related-card-title">Vivre à Vanteaux</div>
+        <div class="related-card-desc">Espaces verts, transports, atmosphère et vie quotidienne du quartier.</div>
+      </a>
+      <a href="ecoles-universites-vanteaux.html" class="related-card">
+        <span class="related-card-icon">🎓</span>
+        <div class="related-card-title">Écoles & Universités</div>
+        <div class="related-card-desc">FLSH, ENSA, IFSI, ILFOMER et les écoles du secteur.</div>
+      </a>
+      <a href="se-loger-vanteaux.html" class="related-card">
+        <span class="related-card-icon">🏠</span>
+        <div class="related-card-title">Se loger à Vanteaux</div>
+        <div class="related-card-desc">Studios, résidences, appartements : trouver son logement.</div>
+      </a>
+    </div>
+  </div>
+</aside>
+
+<footer>
+  <a href="/" class="footer-logo">Vanteaux<em>limoges.fr</em></a>
+  <div class="footer-links">
+    <a href="/">Accueil</a>
+    <a href="histoire-vanteaux.html">Histoire</a>
+    <a href="vivre-a-vanteaux.html">Vivre à Vanteaux</a>
+    <a href="ecoles-universites-vanteaux.html">Écoles</a>
+    <a href="commerces-services-vanteaux.html">Commerces</a>
+    <a href="se-loger-vanteaux.html">Se loger</a>
+    <a href="mentions-legales.html">Mentions légales</a>
+  </div>
+  <div class="footer-copy">© 2026 vanteaux-limoges.fr · Réseau Begip Limoges</div>
+</footer>
+
+</body>
+</html>
