@@ -439,7 +439,7 @@
     <h3>Une question ? <em>Begip vous accompagne</em></h3>
     <p>30 ans d'expérience à Limoges, plus de 900 logements gérés. L'équipe Begip est à votre disposition pour vous orienter vers le logement qui correspond à votre profil.</p>
 
-    <form action="https://formspree.io/f/xlgagzpy" method="POST" class="cta-form">
+    <form action="https://formspree.io/f/xlgagzpy" method="POST" class="cta-form" id="vanteauxForm">
       <div class="cta-form-row">
         <div class="cta-form-group">
           <input type="text" name="prenom" placeholder="Prénom" required />
@@ -460,6 +460,7 @@
         <textarea name="message" placeholder="Votre demande (type de logement recherché, disponibilité souhaitée...)" rows="3"></textarea>
       </div>
       <input type="hidden" name="_subject" value="Nouvelle demande logement — Vanteaux-Limoges.fr" />
+      <input type="hidden" name="source_site" value="vanteaux-limoges.fr" />
       <div aria-hidden="true" style="position:absolute;left:-9999px;">
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
       </div>
@@ -539,6 +540,20 @@
   </div>
   <div class="footer-copy">© 2026 vanteaux-limoges.fr · Réseau Begip Limoges</div>
 </footer>
+
+<script>
+  // ── Double envoi : Formspree (email) + Google Sheets (BDD) ──
+  const APPS_SCRIPT_URL = 'COLLER_ICI_URL_APPS_SCRIPT';
+  const vanteauxForm = document.getElementById('vanteauxForm');
+  if (vanteauxForm && APPS_SCRIPT_URL !== 'COLLER_ICI_URL_APPS_SCRIPT') {
+    vanteauxForm.addEventListener('submit', function() {
+      fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: new FormData(vanteauxForm)
+      }).catch(() => {});
+    });
+  }
+</script>
 
 </body>
 </html>
