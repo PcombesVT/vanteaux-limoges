@@ -543,9 +543,9 @@
 
 <script>
   // ── Double envoi : Formspree (email) + Google Sheets (BDD) ──
-  const APPS_SCRIPT_URL = 'COLLER_ICI_URL_APPS_SCRIPT';
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxs8YesW21u5Y-wuUlg5-GoiTprz-B7OV33iBTIZzgua6QhjQZf7yw0AobsjGeTg-nyaw/exec';
   const vanteauxForm = document.getElementById('vanteauxForm');
-  if (vanteauxForm && APPS_SCRIPT_URL !== 'COLLER_ICI_URL_APPS_SCRIPT') {
+  if (vanteauxForm && APPS_SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbxs8YesW21u5Y-wuUlg5-GoiTprz-B7OV33iBTIZzgua6QhjQZf7yw0AobsjGeTg-nyaw/exec') {
     vanteauxForm.addEventListener('submit', function() {
       fetch(APPS_SCRIPT_URL, {
         method: 'POST',
