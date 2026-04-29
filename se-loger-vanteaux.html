@@ -300,7 +300,7 @@
     <div class="hub-inner">
       <div class="section-num">03</div>
       <h2>Le réseau de <em>logement Begip</em> à Vanteaux</h2>
-      <p class="hub-lead">L'agence <strong style="color:var(--sage-light)">Begip</strong>, implantée à Limoges depuis plus de 30 ans et gestionnaire d'un parc de 900+ logements, propose plusieurs sites de référence pour vous orienter selon votre profil. Tous ces sites sont gérés par les mêmes équipes et proposent des honoraires d'agence à <strong style="color:var(--sage-light)">130 € tout compris</strong>.</p>
+      <p class="hub-lead">L'agence <strong style="color:var(--sage-light)">Begip</strong>, implantée à Limoges depuis plus de 30 ans et gestionnaire d'un parc de 900+ logements, propose plusieurs sites de référence pour vous orienter selon votre profil. Tous ces sites sont gérés par les mêmes équipes et proposent des honoraires d'agence à <strong style="color:var(--sage-light)">130 € tout compris pour les étudiants, apprentis et alternants</strong>.</p>
 
       <div class="reseau-grid">
         <a href="https://emagine-residence.fr" target="_blank" rel="noopener noreferrer" class="reseau-card">
@@ -429,7 +429,7 @@
     <p>Le processus de location à Vanteaux suit le cadre légal français. Voici les principales étapes :</p>
     <p><strong>1. Constituer son dossier.</strong> Pièce d'identité, justificatif de domicile, 3 derniers bulletins de salaire (ou attestation de scolarité pour les étudiants), avis d'imposition, RIB. Pour les étudiants : caution parentale (avec mêmes justificatifs) ou garantie Visale.</p>
     <p><strong>2. Visite du logement.</strong> L'agence ou le bailleur organise les visites. À Vanteaux, la pression locative étant forte à la rentrée, les visites peuvent être groupées : préparez votre dossier complet à apporter en visite.</p>
-    <p><strong>3. Signature du bail.</strong> Bail de 1 an renouvelable pour les meublés, 3 ans pour les non-meublés. Honoraires d'agence Begip : <strong>130 € tout compris</strong>. État des lieux d'entrée obligatoire.</p>
+    <p><strong>3. Signature du bail.</strong> Bail de 1 an renouvelable pour les meublés, 3 ans pour les non-meublés. Honoraires d'agence Begip pour les étudiants, apprentis et alternants : <strong>130 € tout compris</strong>. État des lieux d'entrée obligatoire.</p>
     <p><strong>4. Dépôt de garantie.</strong> Équivalent à 1 mois de loyer hors charges (logement non meublé) ou 2 mois (meublé). Restitué dans le mois suivant la fin du bail si pas de litige.</p>
     <p><strong>5. Démarches d'installation.</strong> Souscription d'un contrat d'électricité (EDF, Engie ou autre), inscription à la box internet, déclaration auprès de la CAF pour les aides au logement, changement d'adresse à La Poste.</p>
   </section>
@@ -437,9 +437,69 @@
   <!-- CTA Begip -->
   <div class="cta-block">
     <h3>Une question ? <em>Begip vous accompagne</em></h3>
-    <p>30 ans d'expérience à Limoges, plus de 900 logements gérés, des honoraires à 130 € tout compris. L'équipe Begip est à votre disposition pour vous orienter vers le logement qui correspond à votre profil.</p>
-    <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="cta-btn">Contacter Begip Limoges</a>
+    <p>30 ans d'expérience à Limoges, plus de 900 logements gérés. L'équipe Begip est à votre disposition pour vous orienter vers le logement qui correspond à votre profil.</p>
+
+    <form action="https://formspree.io/f/xlgagzpy" method="POST" class="cta-form">
+      <div class="cta-form-row">
+        <div class="cta-form-group">
+          <input type="text" name="prenom" placeholder="Prénom" required />
+        </div>
+        <div class="cta-form-group">
+          <input type="text" name="nom" placeholder="Nom" required />
+        </div>
+      </div>
+      <div class="cta-form-row">
+        <div class="cta-form-group">
+          <input type="email" name="email" placeholder="Votre email" required />
+        </div>
+        <div class="cta-form-group">
+          <input type="tel" name="telephone" placeholder="Téléphone" />
+        </div>
+      </div>
+      <div class="cta-form-group">
+        <textarea name="message" placeholder="Votre demande (type de logement recherché, disponibilité souhaitée...)" rows="3"></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="Nouvelle demande logement — Vanteaux-Limoges.fr" />
+      <div aria-hidden="true" style="position:absolute;left:-9999px;">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+      </div>
+      <div class="cta-form-actions">
+        <button type="submit" class="cta-btn">Envoyer ma demande →</button>
+        <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="cta-btn-secondary">Visiter begip.fr</a>
+      </div>
+      <p class="cta-form-legal">Vos données sont transmises uniquement à l'agence Begip et ne sont pas partagées à des tiers.</p>
+    </form>
   </div>
+
+<style>
+  .cta-form { text-align: left; max-width: 640px; margin: 0 auto; }
+  .cta-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+  .cta-form-group { display: flex; flex-direction: column; margin-bottom: 12px; }
+  .cta-form input, .cta-form textarea {
+    padding: 12px 16px; border-radius: 10px; border: 1.5px solid rgba(255,255,255,.2);
+    background: rgba(255,255,255,.1); color: var(--cream);
+    font-family: inherit; font-size: .95rem;
+    outline: none; transition: border-color .2s;
+    width: 100%;
+  }
+  .cta-form input::placeholder, .cta-form textarea::placeholder { color: rgba(250,246,238,.5); }
+  .cta-form input:focus, .cta-form textarea:focus { border-color: var(--sage-light); }
+  .cta-form textarea { resize: vertical; }
+  .cta-form-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
+  .cta-btn-secondary {
+    display: inline-block; border: 1.5px solid rgba(255,255,255,.3);
+    color: rgba(250,246,238,.8); padding: 14px 28px; border-radius: 50px;
+    font-size: .9rem; text-decoration: none;
+    transition: border-color .2s, background .2s;
+  }
+  .cta-btn-secondary:hover { border-color: var(--sage-light); background: rgba(255,255,255,.08); }
+  .cta-form-legal { font-size: .75rem; color: rgba(250,246,238,.5); margin-top: 12px; font-style: italic; }
+  @media (max-width: 600px) {
+    .cta-form-row { grid-template-columns: 1fr; }
+    .cta-form-actions { flex-direction: column; }
+    .cta-btn, .cta-btn-secondary { width: 100%; text-align: center; }
+  }
+</style>
 </main>
 
 <aside class="related-pages">
