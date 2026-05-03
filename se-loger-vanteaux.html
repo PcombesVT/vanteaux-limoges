@@ -468,6 +468,11 @@
         <button type="submit" class="cta-btn">Envoyer ma demande →</button>
         <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="cta-btn-secondary">Visiter begip.fr</a>
       </div>
+      <div id="vanteauxConfirmation" style="display:none; margin-top:16px; padding:16px 20px; background:rgba(74,156,74,.15); border:1px solid rgba(74,156,74,.4); border-left:4px solid #4a9c4a; border-radius:8px; color:var(--cream); font-size:.9rem; line-height:1.6;">
+        <strong style="display:block; margin-bottom:6px;">✓ Votre demande a bien été envoyée !</strong>
+        L'équipe Begip vous recontactera dans les meilleurs délais, du lundi au vendredi de 8h30 à 18h00.<br>
+        Pour toute urgence : <a href="tel:0555339750" style="color:#a8d5a2; font-weight:600;">05 55 33 97 50</a>
+      </div>
       <p class="cta-form-legal">Vos données sont transmises uniquement à l'agence Begip et ne sont pas partagées à des tiers.</p>
     </form>
   </div>
@@ -542,17 +547,31 @@
 </footer>
 
 <script>
-  // ── Double envoi : Formspree (email) + Google Sheets (BDD) ──
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxs8YesW21u5Y-wuUlg5-GoiTprz-B7OV33iBTIZzgua6QhjQZf7yw0AobsjGeTg-nyaw/exec';
   const vanteauxForm = document.getElementById('vanteauxForm');
   if (vanteauxForm) {
-    vanteauxForm.addEventListener('submit', function() {
-      const encoded = new URLSearchParams(new FormData(vanteauxForm)).toString();
+    vanteauxForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(vanteauxForm);
+      const encoded = new URLSearchParams(formData).toString();
+
+      // Envoi Formspree
+      fetch('https://formspree.io/f/xlgagzpy', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encoded
+      }).catch(() => {});
+
+      // Envoi Google Sheets
+      const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxs8YesW21u5Y-wuUlg5-GoiTprz-B7OV33iBTIZzgua6QhjQZf7yw0AobsjGeTg-nyaw/exec';
       fetch(APPS_SCRIPT_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encoded
       }).catch(() => {});
+
+      // Afficher confirmation et masquer le formulaire
+      vanteauxForm.style.display = 'none';
+      document.getElementById('vanteauxConfirmation').style.display = 'block';
     });
   }
 </script>
