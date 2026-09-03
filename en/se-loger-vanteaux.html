@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Housing near Vanteaux Campus, Limoges – Student Housing, Studios &amp; Flats</title>
+  <meta name="description" content="Student housing near the Vanteaux campus in Limoges: student studios, university residences, furnished flats, long-term rentals. All the options close to the Vanteaux campus and Dupuytren teaching hospital." />
+  <meta name="keywords" content="student housing Vanteaux campus Limoges, student residence Vanteaux campus Limoges, student flat Vanteaux campus Limoges, studio Vanteaux campus, housing Vanteaux Limoges, rental near CHU Dupuytren, student housing south-west Limoges" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.vanteaux-limoges.fr/en/se-loger-vanteaux" />
+  <link rel="alternate" hreflang="fr" href="https://www.vanteaux-limoges.fr/se-loger-vanteaux" />
+  <link rel="alternate" hreflang="en" href="https://www.vanteaux-limoges.fr/en/se-loger-vanteaux" />
+  <link rel="alternate" hreflang="x-default" href="https://www.vanteaux-limoges.fr/se-loger-vanteaux" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --forest: #2d4a2b; --forest-deep: #1f3520; --sage: #8ba888;
+      --sage-light: #c5d5c2; --moss: #5d7c5a; --cream: #faf6ee;
+      --cream-warm: #f3ebd9; --ink: #1a1a17; --ink-soft: #3a3a35;
+      --muted: #6b6b62; --line: rgba(45, 74, 43, 0.12); --radius: 10px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.7; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 48px; background: rgba(31, 53, 32, .96);
+      backdrop-filter: blur(16px); border-bottom: 1px solid rgba(197, 213, 194, .15); }
+    .nav-logo { font-family: 'Fraunces', serif; font-weight: 800; font-size: 1.15rem;
+      color: var(--cream); text-decoration: none; }
+    .nav-logo em { color: var(--sage-light); font-style: italic; font-weight: 400; font-size: 0.85em; }
+    .nav-right { display: flex; gap: 32px; }
+    .nav-link { color: rgba(250, 246, 238, 0.7); text-decoration: none;
+      font-size: 0.82rem; font-weight: 500; transition: color .25s; }
+    .nav-link:hover { color: var(--sage-light); }
+    .nav-cta { background: var(--sage-light); color: var(--forest-deep) !important;
+      padding: 9px 20px; border-radius: 50px; font-weight: 600 !important; }
+    .lang-switch { display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 600; }
+    .lang-switch a { color: rgba(250, 246, 238, 0.55); text-decoration: none; transition: color .2s; }
+    .lang-switch a.active { color: var(--sage-light); }
+    .lang-switch a:hover { color: var(--cream); }
+    .lang-switch .sep { color: rgba(250, 246, 238, 0.3); }
+
+    .page-hero { padding: 160px 48px 80px;
+      background: linear-gradient(160deg, var(--forest-deep), var(--moss));
+      color: var(--cream); position: relative; overflow: hidden; }
+    .page-hero::before { content: ''; position: absolute; top: -10%; right: -10%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(197,213,194,.12), transparent 70%); }
+    .page-hero-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
+    .breadcrumb { font-size: 0.78rem; color: rgba(250, 246, 238, .55); margin-bottom: 24px; }
+    .breadcrumb a { color: rgba(250, 246, 238, .75); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--sage-light); }
+    .page-tag { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--sage-light); margin-bottom: 20px; font-weight: 600; }
+    .page-hero h1 { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem); line-height: 1.05;
+      letter-spacing: -0.02em; margin-bottom: 22px; }
+    .page-hero h1 em { font-style: italic; color: var(--sage-light); font-weight: 400; }
+    .page-hero-sub { font-size: 1.1rem; color: rgba(250, 246, 238, .8);
+      max-width: 720px; line-height: 1.7; font-weight: 300; }
+
+    main { max-width: 1080px; margin: 0 auto; padding: 80px 32px; }
+    .section-block { margin-bottom: 80px; }
+    .section-num { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 0.85rem; color: var(--moss); margin-bottom: 8px;
+      letter-spacing: 0.06em; }
+    .section-block h2 { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: clamp(1.7rem, 3vw, 2.2rem); line-height: 1.15;
+      color: var(--forest-deep); margin-bottom: 18px; letter-spacing: -0.01em; }
+    .section-block h2 em { font-style: italic; color: var(--moss); font-weight: 400; }
+    .section-block p { font-size: 1rem; color: var(--ink-soft);
+      line-height: 1.8; margin-bottom: 16px; }
+    .section-block p strong { color: var(--forest-deep); }
+
+    .typo-grid { display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 20px; margin-top: 32px; }
+    .typo-card { background: #fff; border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 28px;
+      transition: transform .3s, border-color .3s, box-shadow .3s; }
+    .typo-card:hover { transform: translateY(-3px); border-color: var(--sage);
+      box-shadow: 0 16px 32px rgba(45, 74, 43, .08); }
+    .typo-icon { font-size: 1.7rem; margin-bottom: 12px; display: block; }
+    .typo-title { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 1.2rem; color: var(--forest-deep); margin-bottom: 8px; }
+    .typo-price { font-size: 0.85rem; color: var(--moss);
+      font-weight: 600; margin-bottom: 12px; letter-spacing: 0.04em; }
+    .typo-desc { font-size: 0.93rem; color: var(--muted); line-height: 1.65; }
+
+    /* HUB PARTENAIRES — section sombre */
+    .hub-section {
+      background: linear-gradient(180deg, var(--forest-deep), var(--forest));
+      color: var(--cream);
+      padding: 100px 48px;
+      margin: 80px -32px;
+    }
+    .hub-inner { max-width: 1080px; margin: 0 auto; }
+    .hub-section .section-num { color: var(--sage-light); }
+    .hub-section h2 { color: var(--cream); }
+    .hub-section h2 em { color: var(--sage-light); }
+    .hub-section .hub-lead {
+      font-size: 1.05rem; color: rgba(250, 246, 238, .75);
+      line-height: 1.75; max-width: 720px; margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .reseau-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+    }
+    .reseau-card {
+      background: rgba(250, 246, 238, .04);
+      border: 1px solid rgba(197, 213, 194, .12);
+      border-radius: 14px; padding: 32px;
+      text-decoration: none; color: inherit;
+      transition: background .3s, border-color .3s, transform .3s;
+      display: flex; flex-direction: column;
+    }
+    .reseau-card:hover {
+      background: rgba(197, 213, 194, .1);
+      border-color: var(--sage-light);
+      transform: translateY(-4px);
+    }
+    .reseau-card-icon { font-size: 2rem; margin-bottom: 18px; }
+    .reseau-card-name { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 1.3rem; color: var(--cream); margin-bottom: 8px; }
+    .reseau-card-url { font-size: 0.78rem; color: var(--sage-light);
+      letter-spacing: 0.04em; font-weight: 500; margin-bottom: 18px; }
+    .reseau-card-desc { font-size: 0.92rem; color: rgba(250, 246, 238, .7);
+      line-height: 1.65; flex: 1; font-weight: 300; }
+    .reseau-card-arrow { display: inline-flex; align-items: center; gap: 6px;
+      margin-top: 20px; font-size: 0.85rem; color: var(--sage-light);
+      font-weight: 600; transition: gap .2s; }
+    .reseau-card:hover .reseau-card-arrow { gap: 12px; }
+
+    /* PROFILS - quel logement pour qui */
+    .profil-grid { display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 18px; margin-top: 32px; }
+    .profil-card { background: var(--cream-warm);
+      border-radius: var(--radius); padding: 28px;
+      border: 1px solid var(--line); }
+    .profil-icon { font-size: 1.6rem; margin-bottom: 12px; display: block; }
+    .profil-title { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 1.1rem; color: var(--forest-deep); margin-bottom: 10px; }
+    .profil-reco { font-size: 0.88rem; color: var(--moss); font-weight: 600;
+      margin-bottom: 10px; }
+    .profil-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
+
+    /* PRIX */
+    .prix-table { width: 100%; border-collapse: collapse; margin-top: 24px;
+      background: #fff; border-radius: var(--radius); overflow: hidden;
+      border: 1px solid var(--line); }
+    .prix-table th { background: var(--forest-deep); color: var(--cream);
+      padding: 16px 20px; text-align: left; font-family: 'Inter', sans-serif;
+      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em;
+      text-transform: uppercase; }
+    .prix-table td { padding: 16px 20px; border-top: 1px solid var(--line);
+      font-size: 0.93rem; color: var(--ink-soft); }
+    .prix-table tr:nth-child(even) td { background: var(--cream-warm); }
+    .prix-table td:first-child { font-weight: 600; color: var(--forest-deep); }
+
+    .info-block { background: var(--cream-warm); border-left: 3px solid var(--moss);
+      padding: 28px 32px; margin: 32px 0; border-radius: 0 12px 12px 0;
+      font-size: 0.95rem; color: var(--ink-soft); line-height: 1.7; }
+    .info-block strong { color: var(--forest-deep); }
+    .info-block a { color: var(--moss); font-weight: 500; }
+
+    /* CTA Begip */
+    .cta-block { background: linear-gradient(135deg, var(--moss), var(--forest));
+      border-radius: 20px; padding: 56px; margin-top: 60px;
+      color: var(--cream); text-align: center; }
+    .cta-block h3 { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 2rem; margin-bottom: 16px; line-height: 1.15; }
+    .cta-block h3 em { font-style: italic; color: var(--sage-light); font-weight: 400; }
+    .cta-block p { font-size: 1rem; color: rgba(250, 246, 238, .85);
+      max-width: 580px; margin: 0 auto 28px; line-height: 1.7; }
+    .cta-btn { display: inline-block; background: var(--sage-light);
+      color: var(--forest-deep); padding: 16px 36px; border-radius: 50px;
+      font-weight: 600; font-size: 0.95rem; text-decoration: none;
+      transition: transform .2s, box-shadow .25s;
+      box-shadow: 0 4px 24px rgba(0,0,0,.15); }
+    .cta-btn:hover { transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0,0,0,.25); }
+
+    .related-pages { background: var(--cream-warm); padding: 80px 48px; margin-top: 80px; }
+    .related-inner { max-width: 1180px; margin: 0 auto; }
+    .related-tag { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--moss); margin-bottom: 14px; font-weight: 600; }
+    .related-title { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 1.8rem; color: var(--forest-deep); margin-bottom: 40px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .related-card { background: #fff; border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 28px; text-decoration: none;
+      color: inherit; transition: transform .3s, border-color .3s, box-shadow .3s; }
+    .related-card:hover { transform: translateY(-4px); border-color: var(--sage);
+      box-shadow: 0 16px 32px rgba(45, 74, 43, .1); }
+    .related-card-icon { font-size: 1.7rem; margin-bottom: 12px; display: block; }
+    .related-card-title { font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 1.1rem; color: var(--forest-deep); margin-bottom: 8px; }
+    .related-card-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+
+    footer { background: var(--forest-deep); color: var(--cream); padding: 48px;
+      text-align: center; }
+    footer .footer-logo { font-family: 'Fraunces', serif; font-weight: 800;
+      font-size: 1.2rem; color: var(--cream); text-decoration: none;
+      display: inline-block; margin-bottom: 16px; }
+    footer .footer-logo em { color: var(--sage-light); font-style: italic;
+      font-weight: 400; font-size: 0.85em; }
+    .footer-links { display: flex; gap: 24px; justify-content: center;
+      flex-wrap: wrap; margin-bottom: 20px; }
+    .footer-links a { color: rgba(250, 246, 238, .6); text-decoration: none; font-size: 0.85rem; }
+    .footer-links a:hover { color: var(--sage-light); }
+    .footer-copy { font-size: 0.78rem; color: rgba(250, 246, 238, .35); }
+
+    @media (max-width: 900px) {
+      nav { padding: 14px 24px; } .nav-link:not(.nav-cta) { display: none; }
+      .nav-right { gap: 16px; }
+      .page-hero { padding: 130px 24px 60px; }
+      main { padding: 56px 24px; }
+      .typo-grid, .reseau-grid { grid-template-columns: 1fr; }
+      .profil-grid { grid-template-columns: 1fr; }
+      .hub-section { padding: 60px 24px; margin: 60px -24px; }
+      .cta-block { padding: 36px 24px; }
+      .cta-block h3 { font-size: 1.5rem; }
+      .related-pages { padding: 56px 24px; }
+      .related-grid { grid-template-columns: 1fr; }
+      .prix-table { font-size: 0.85rem; }
+      .prix-table th, .prix-table td { padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/en/" class="nav-logo">Vanteaux<em>limoges.fr</em></a>
+  <div class="nav-right">
+    <a href="/en/histoire-vanteaux" class="nav-link">History</a>
+    <a href="/en/vivre-a-vanteaux" class="nav-link">Living in Vanteaux</a>
+    <a href="/en/ecoles-universites-vanteaux" class="nav-link">Schools & Universities</a>
+    <a href="/en/commerces-services-vanteaux" class="nav-link">Shops</a>
+    <span class="lang-switch"><a href="/se-loger-vanteaux">FR</a><span class="sep">/</span><a href="/en/se-loger-vanteaux" class="active">EN</a></span>
+    <a href="/en/se-loger-vanteaux" class="nav-link nav-cta">Housing</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="/en/">Vanteaux Limoges</a> · Housing</div>
+    <div class="page-tag">Housing in Vanteaux</div>
+    <h1>Student housing near the <em>Vanteaux campus</em></h1>
+    <p class="page-hero-sub">Student studio, university residence, family flat or town house: the Vanteaux campus area offers a varied range of rentals. Here's how to find the student home that fits your profile and budget, right next to the Vanteaux campus and the teaching hospital.</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- POURQUOI VANTEAUX -->
+  <section class="section-block">
+    <div class="section-num">01</div>
+    <h2>Why live <em>in Vanteaux</em>?</h2>
+    <p>Vanteaux brings together assets that are rare for a Limoges district: the <strong>immediate proximity of Dupuytren teaching hospital</strong> and the <strong>university campus</strong> (FLSH, ENSA, IFSI, ILFOMER), a preserved <strong>green setting</strong>, a calm <strong>residential feel</strong>, <strong>local shops</strong> and functional public transport.</p>
+    <p>This combination makes the district <strong>sought after all year round</strong>, with tight rental demand especially at the start of the university year in September. Starting your search in the spring or summer beforehand gives you the pick of the best opportunities.</p>
+  </section>
+
+  <!-- TYPOLOGIES -->
+  <section class="section-block">
+    <div class="section-num">02</div>
+    <h2>Which <em>type of home</em>?</h2>
+    <p>The rental offer in Vanteaux and its immediate surroundings covers every type, from student studio to family house. Here are the main categories available in the area:</p>
+
+    <div class="typo-grid">
+      <div class="typo-card">
+        <span class="typo-icon">🛋️</span>
+        <div class="typo-title">Studios &amp; one-room flats (T1)</div>
+        <div class="typo-price">From ~€340/month incl. charges</div>
+        <p class="typo-desc">Homes of 18 to 25 m², perfect for students or young professionals on the move. Available in student residences (with services included) or as standard private rentals.</p>
+      </div>
+      <div class="typo-card">
+        <span class="typo-icon">🛏️</span>
+        <div class="typo-title">One-bedroom flats (T2)</div>
+        <div class="typo-price">~€450 to €600/month incl. charges</div>
+        <p class="typo-desc">Ideal for a couple or a flatmate. A bedroom separate from the living room, open or closed kitchen depending on the property. Parking often available in the district.</p>
+      </div>
+      <div class="typo-card">
+        <span class="typo-icon">🛋️</span>
+        <div class="typo-title">Two/three-bedroom flats (T3/T4)</div>
+        <div class="typo-price">~€600 to €850/month incl. charges</div>
+        <p class="typo-desc">For families or shared flats. Several bedrooms, a spacious living room, sometimes a balcony or small garden. A good option for couples with a child or student flatshares.</p>
+      </div>
+      <div class="typo-card">
+        <span class="typo-icon">🏡</span>
+        <div class="typo-title">Detached houses</div>
+        <div class="typo-price">~€900/month incl. charges and up</div>
+        <p class="typo-desc">A largely detached-housing district, Vanteaux has many individual houses with gardens. A tight market, with few available to rent.</p>
+      </div>
+    </div>
+
+    <div class="info-block">
+      <strong>A note on prices.</strong> These ranges are indicative and vary with size, condition, energy performance (DPE) and fittings. A new or renovated home rated energy class A or B will be at the top of the ranges; an older property at the bottom.
+    </div>
+  </section>
+
+  <!-- HUB RÉSEAU -->
+  <section class="hub-section">
+    <div class="hub-inner">
+      <div class="section-num">03</div>
+      <h2>The <em>Begip housing</em> network in Vanteaux</h2>
+      <p class="hub-lead"><strong style="color:var(--sage-light)">Begip</strong>, established in Limoges for over 30 years and managing a portfolio of 900+ homes, runs several reference sites to guide you by profile. They are all managed by the same teams and offer agency fees of <strong style="color:var(--sage-light)">€130 all-in</strong>.</p>
+
+      <div class="reseau-grid">
+        <a href="https://emagine-residence.fr/en/" target="_blank" rel="noopener noreferrer" class="reseau-card">
+          <span class="reseau-card-icon">🏥</span>
+          <div class="reseau-card-name">E-Magine — Student residence</div>
+          <div class="reseau-card-url">emagine-residence.fr</div>
+          <p class="reseau-card-desc">Student residence in Isle, just <strong>1.1 km from the Vanteaux FLSH</strong> and a 5–7 min walk from Dupuytren teaching hospital. Equipped and semi-furnished studios, parking, WiFi, concierge. Ideal for health and humanities students.</p>
+          <span class="reseau-card-arrow">See the E-Magine residence →</span>
+        </a>
+
+        <a href="https://www.studio-limoges.fr/en/" target="_blank" rel="noopener noreferrer" class="reseau-card">
+          <span class="reseau-card-icon">🛋️</span>
+          <div class="reseau-card-name">Studio Limoges</div>
+          <div class="reseau-card-url">studio-limoges.fr</div>
+          <p class="reseau-card-desc">Self-contained studios in Limoges and its outskirts, equipped and semi-furnished. A more private option than a university residence, with a wide choice of locations and prices.</p>
+          <span class="reseau-card-arrow">See the studios →</span>
+        </a>
+
+        <a href="https://residenceetudiantelimoges.fr" target="_blank" rel="noopener noreferrer" class="reseau-card">
+          <span class="reseau-card-icon">🏛️</span>
+          <div class="reseau-card-name">Student Residence Limoges</div>
+          <div class="reseau-card-url">residenceetudiantelimoges.fr</div>
+          <p class="reseau-card-desc">The hub site for all the network's student residences: <strong>University Meissonier</strong> (205 units), <strong>University Dutreix</strong> and <strong>E-Magine</strong>. Over 450 student homes managed.</p>
+          <span class="reseau-card-arrow">See all the residences →</span>
+        </a>
+
+        <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="reseau-card">
+          <span class="reseau-card-icon">🏠</span>
+          <div class="reseau-card-name">Begip Agency</div>
+          <div class="reseau-card-url">begip.fr</div>
+          <p class="reseau-card-desc">The agency's site for <strong>standard rentals</strong> (studios, one- to three-bed flats, houses), property sales, rental management and all asset-management services. 30+ years of experience in Limoges.</p>
+          <span class="reseau-card-arrow">See the Begip agency →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section class="section-block">
+    <div class="section-num">04</div>
+    <h2>Which home for <em>which profile?</em></h2>
+    <p>To help you find your way around the network, here are our recommendations by situation:</p>
+
+    <div class="profil-grid">
+      <div class="profil-card">
+        <span class="profil-icon">🎓</span>
+        <div class="profil-title">Health student</div>
+        <div class="profil-reco">→ E-Magine or a student residence</div>
+        <p class="profil-desc">For students in medicine, pharmacy, IFSI or ILFOMER, the priority is being close to the hospital and campus. The residences offer good value with services included.</p>
+      </div>
+      <div class="profil-card">
+        <span class="profil-icon">📚</span>
+        <div class="profil-title">Arts / humanities student</div>
+        <div class="profil-reco">→ E-Magine or Studio Limoges</div>
+        <p class="profil-desc">For FLSH or ENSA students, aim for a home a 10–15 minute walk from the Vanteaux campus. Self-contained studios or a residence, as you prefer.</p>
+      </div>
+      <div class="profil-card">
+        <span class="profil-icon">🩺</span>
+        <div class="profil-title">Junior doctor or hospital staff</div>
+        <div class="profil-reco">→ E-Magine or Begip</div>
+        <p class="profil-desc">To keep travel to Dupuytren teaching hospital short, aim for Vanteaux or Isle. E-Magine for a secure studio near the hospital, or a one-room/one-bedroom flat via Begip for more space.</p>
+      </div>
+      <div class="profil-card">
+        <span class="profil-icon">👨‍👩‍👧</span>
+        <div class="profil-title">Family / couple</div>
+        <div class="profil-reco">→ Begip — standard rentals</div>
+        <p class="profil-desc">For a one- to three-bedroom flat or a house in Vanteaux or nearby, begip.fr lists the private properties managed by the agency. Plan several months ahead if you can.</p>
+      </div>
+      <div class="profil-card">
+        <span class="profil-icon">💼</span>
+        <div class="profil-title">Young professional</div>
+        <div class="profil-reco">→ Studio Limoges or Begip</div>
+        <p class="profil-desc">Equipped studios or one-room/one-bedroom flats in the private market. A balance between residential calm and closeness to the city centre.</p>
+      </div>
+      <div class="profil-card">
+        <span class="profil-icon">👴</span>
+        <div class="profil-title">Senior</div>
+        <div class="profil-reco">→ Begip — the agency</div>
+        <p class="profil-desc">For a single-level flat, a one-bedroom flat in a quiet building or an adapted home, the Begip agency will guide you to match your requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AIDES -->
+  <section class="section-block">
+    <div class="section-num">05</div>
+    <h2>Housing benefit &amp; the <em>CAF</em></h2>
+    <p>Most homes offered in Vanteaux are <strong>eligible for CAF housing benefit</strong> (the French family allowance fund): APL (personalised housing benefit) or ALS (social housing allowance) depending on the property type and your situation.</p>
+
+    <table class="prix-table">
+      <thead>
+        <tr>
+          <th>Type of benefit</th>
+          <th>Who it’s for</th>
+          <th>Main conditions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>APL</td>
+          <td>Students, employees, families</td>
+          <td>CAF-approved home, income below the ceiling</td>
+        </tr>
+        <tr>
+          <td>ALS</td>
+          <td>Students, young professionals (non-approved home)</td>
+          <td>Income below the ceiling, minimum home size</td>
+        </tr>
+        <tr>
+          <td>ALF</td>
+          <td>Families with children, young couples</td>
+          <td>Dependent family, income below the ceiling</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="info-block">
+      <strong>CAF estimate.</strong> To estimate your benefit, use the official calculator at <a href="https://www.caf.fr/" target="_blank" rel="noopener noreferrer">caf.fr</a>. Amounts vary with your situation, income, rent and geographic zone. Limoges is in zone 2.
+    </div>
+  </section>
+
+  <!-- DÉMARCHES -->
+  <section class="section-block">
+    <div class="section-num">06</div>
+    <h2>The <em>rental process</em></h2>
+    <p>Renting in Vanteaux follows the French legal framework. Here are the main steps:</p>
+    <p><strong>1. Put together your file.</strong> ID, proof of address, your last 3 payslips (or a certificate of enrolment for students), tax notice, bank details (RIB). For students: a parental guarantee (with the same documents) or the Visale guarantee.</p>
+    <p><strong>2. Viewing the home.</strong> The agency or landlord arranges viewings. In Vanteaux, with strong rental demand at the start of term, viewings may be grouped: have your complete file ready to bring along.</p>
+    <p><strong>3. Signing the lease.</strong> A 1-year renewable lease for furnished homes, 3 years for unfurnished. Begip agency fees: <strong>€130 all-in</strong>. A check-in inventory is compulsory.</p>
+    <p><strong>4. Security deposit.</strong> Equal to 1 month's rent excluding charges (unfurnished) or 2 months (furnished). Returned within a month of the lease ending if there is no dispute.</p>
+    <p><strong>5. Setting up.</strong> Sign up for an electricity contract (EDF, Engie or another), get an internet box, declare your tenancy to the CAF for housing benefit, and change your address with La Poste.</p>
+  </section>
+
+  <!-- CTA Begip -->
+  <div class="cta-block">
+    <h3>A question? <em>Begip is here to help</em></h3>
+    <p>30 years of experience in Limoges, over 900 homes managed, fees of €130 all-in. The Begip team is on hand to guide you to the home that fits your profile.</p>
+    <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="cta-btn">Contact Begip Limoges</a>
+  </div>
+</main>
+
+<aside class="related-pages">
+  <div class="related-inner">
+    <div class="related-tag">Go further</div>
+    <h2 class="related-title">More pages about Vanteaux</h2>
+    <div class="related-grid">
+      <a href="/en/vivre-a-vanteaux" class="related-card">
+        <span class="related-card-icon">🌿</span>
+        <div class="related-card-title">Living in Vanteaux</div>
+        <div class="related-card-desc">Transport, green spaces and everyday quality of life.</div>
+      </a>
+      <a href="/en/ecoles-universites-vanteaux" class="related-card">
+        <span class="related-card-icon">🎓</span>
+        <div class="related-card-title">Schools & Universities</div>
+        <div class="related-card-desc">FLSH, ENSA, IFSI, ILFOMER and local schools.</div>
+      </a>
+      <a href="/en/commerces-services-vanteaux" class="related-card">
+        <span class="related-card-icon">🥖</span>
+        <div class="related-card-title">Shops & Services</div>
+        <div class="related-card-desc">Bakeries, supermarkets, pharmacies and professionals.</div>
+      </a>
+    </div>
+  </div>
+</aside>
+
+<footer>
+  <a href="/en/" class="footer-logo">Vanteaux<em>limoges.fr</em></a>
+  <div class="footer-links">
+    <a href="/en/">Home</a>
+    <a href="/en/histoire-vanteaux">History</a>
+    <a href="/en/vivre-a-vanteaux">Living in Vanteaux</a>
+    <a href="/en/ecoles-universites-vanteaux">Schools</a>
+    <a href="/en/commerces-services-vanteaux">Shops</a>
+    <a href="/en/se-loger-vanteaux">Housing</a>
+    <a href="/mentions-legales">Legal notice</a>
+  </div>
+  <div class="footer-copy">© 2026 vanteaux-limoges.fr · Begip Limoges network</div>
+</footer>
+
+</body>
+</html>
