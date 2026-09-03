@@ -2,38 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.vanteaux-limoges.fr/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.vanteaux-limoges.fr/histoire-vanteaux.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.vanteaux-limoges.fr/vivre-a-vanteaux.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.vanteaux-limoges.fr/ecoles-universites-vanteaux.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.vanteaux-limoges.fr/commerces-services-vanteaux.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.vanteaux-limoges.fr/se-loger-vanteaux.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- EN — English versions -->
+  <url>
+    <loc>https://www.vanteaux-limoges.fr/en/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.vanteaux-limoges.fr/en/histoire-vanteaux</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.vanteaux-limoges.fr/en/vivre-a-vanteaux</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.vanteaux-limoges.fr/en/ecoles-universites-vanteaux</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.vanteaux-limoges.fr/en/commerces-services-vanteaux</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.vanteaux-limoges.fr/en/se-loger-vanteaux</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
