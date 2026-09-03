@@ -10,6 +10,9 @@
   <meta name="keywords" content="Vanteaux Limoges, quartier Vanteaux, Vanteaux 87000, campus Vanteaux, FLSH Limoges, ENSA Limoges, IFSI Limoges, vivre à Vanteaux, écoles Vanteaux, commerces Vanteaux, parc Vanteaux, transport Vanteaux" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.vanteaux-limoges.fr/" />
+  <link rel="alternate" hreflang="fr" href="https://www.vanteaux-limoges.fr/" />
+  <link rel="alternate" hreflang="en" href="https://www.vanteaux-limoges.fr/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.vanteaux-limoges.fr/" />
   <meta name="google-site-verification" content="DGfGHXuG-LfXDTvn4xol1YLRl9_OjUK84feL_T5qkKc" />
 
   <!-- Open Graph -->
@@ -112,6 +115,12 @@
       font-weight: 600 !important;
       transition: background .2s, transform .15s !important;
     }
+
+    .lang-switch { display: inline-flex; align-items: center; gap: 6px; font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 600; }
+    .lang-switch a { color: rgba(250, 246, 238, 0.55); text-decoration: none; transition: color .2s; }
+    .lang-switch a.active { color: var(--sage-light); }
+    .lang-switch a:hover { color: var(--cream); }
+    .lang-switch .sep { color: rgba(250, 246, 238, 0.3); }
     .nav-cta:hover { background: #d8e6d3 !important; transform: translateY(-1px); }
 
     /* ── HERO ── */
@@ -623,6 +632,7 @@
     <a href="vivre-a-vanteaux" class="nav-link">Vivre à Vanteaux</a>
     <a href="ecoles-universites-vanteaux" class="nav-link">Écoles & Universités</a>
     <a href="commerces-services-vanteaux" class="nav-link">Commerces</a>
+    <span class="lang-switch"><a href="/" class="active">FR</a><span class="sep">/</span><a href="/en/">EN</a></span>
     <a href="se-loger-vanteaux" class="nav-link nav-cta">Se loger</a>
   </div>
 </nav>
