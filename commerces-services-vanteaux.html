@@ -243,7 +243,7 @@
     <a href="ecoles-universites-vanteaux" class="nav-link">Écoles & Universités</a>
     <a href="commerces-services-vanteaux" class="nav-link">Commerces</a>
     <span class="lang-switch"><a href="/commerces-services-vanteaux" class="active">FR</a><span class="sep">/</span><a href="/en/commerces-services-vanteaux">EN</a></span>
-    <a href="se-loger-vanteaux" class="nav-link nav-cta">Se loger</a>
+    <a href="se-loger-vanteaux" class="nav-link nav-cta">Se loger à Vanteaux</a>
   </div>
 </nav>
 
@@ -411,9 +411,38 @@
     <h3>Vous cherchez un logement <em>à Vanteaux</em> ?</h3>
     <p>plus de 35 ans d'expérience à Limoges, plus de 900 logements gérés. L'équipe Begip vous oriente vers le logement le mieux situé selon votre établissement et votre budget.</p>
 
+    <div class="cta-form-card">
+      <form action="https://formspree.io/f/xlgagzpy" method="POST" class="cta-form" id="vanteauxForm" style="scroll-margin-top: 110px;">
+        <div class="cta-form-row">
+          <div class="cta-form-group"><input type="text" name="prenom" placeholder="Prénom" required /></div>
+          <div class="cta-form-group"><input type="text" name="nom" placeholder="Nom" required /></div>
+        </div>
+        <div class="cta-form-row">
+          <div class="cta-form-group"><input type="email" name="email" placeholder="Votre email" required /></div>
+          <div class="cta-form-group"><input type="tel" name="telephone" placeholder="Téléphone" /></div>
+        </div>
+        <div class="cta-form-group">
+          <textarea name="message" placeholder="Votre recherche (type de logement, disponibilité, formation...)" rows="3"></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="Nouvelle demande — Commerces Vanteaux-Limoges.fr" />
+        <input type="hidden" name="source_site" value="vanteaux-limoges.fr/commerces-services" />
+        <div aria-hidden="true" style="position:absolute;left:-9999px;"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></div>
+        <div class="cta-form-actions">
+          <button type="submit" class="cta-btn">Envoyer ma demande →</button>
+          <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="cta-btn-secondary">Visiter begip.fr</a>
+        </div>
+        <div id="vanteauxConfirmation" style="display:none; margin-top:16px; padding:16px 20px; background:rgba(74,156,74,.12); border:1px solid rgba(74,156,74,.35); border-left:4px solid #4a9c4a; border-radius:8px; color:var(--forest-deep); font-size:.9rem; line-height:1.6;">
+          <strong style="display:block; margin-bottom:6px;">✓ Votre demande a bien été envoyée !</strong>
+          L'équipe Begip vous recontactera du lundi au vendredi de 8h30 à 18h00.<br>
+          Pour toute urgence : <a href="tel:0555339750" style="color:var(--forest-deep); font-weight:600;">05 55 33 97 50</a>
+        </div>
+        <p class="cta-form-legal">Vos données sont transmises uniquement à l'agence Begip.</p>
+      </form>
+    </div>
+
     <!-- HUB RÉSEAU -->
     <div style="margin-bottom:2rem;">
-      <p class="hub-lead">L'agence <strong style="color:var(--sage-light)">Begip</strong> propose plusieurs résidences proches de Vanteaux :</p>
+      <p class="hub-lead">Vous pouvez aussi consulter directement les sites du réseau <strong style="color:var(--sage-light)">Begip</strong> :</p>
 
       <div class="reseau-grid">
         <a href="https://emagine-residence.fr" target="_blank" rel="noopener noreferrer" class="reseau-card">
@@ -457,33 +486,6 @@
         </a>
       </div>
     </div>
-
-    <form action="https://formspree.io/f/xlgagzpy" method="POST" class="cta-form" id="vanteauxForm" style="scroll-margin-top: 110px;">
-      <div class="cta-form-row">
-        <div class="cta-form-group"><input type="text" name="prenom" placeholder="Prénom" required /></div>
-        <div class="cta-form-group"><input type="text" name="nom" placeholder="Nom" required /></div>
-      </div>
-      <div class="cta-form-row">
-        <div class="cta-form-group"><input type="email" name="email" placeholder="Votre email" required /></div>
-        <div class="cta-form-group"><input type="tel" name="telephone" placeholder="Téléphone" /></div>
-      </div>
-      <div class="cta-form-group">
-        <textarea name="message" placeholder="Votre recherche (type de logement, disponibilité, formation...)" rows="3"></textarea>
-      </div>
-      <input type="hidden" name="_subject" value="Nouvelle demande — Commerces Vanteaux-Limoges.fr" />
-      <input type="hidden" name="source_site" value="vanteaux-limoges.fr/commerces-services" />
-      <div aria-hidden="true" style="position:absolute;left:-9999px;"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></div>
-      <div class="cta-form-actions">
-        <button type="submit" class="cta-btn">Envoyer ma demande →</button>
-        <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="cta-btn-secondary">Visiter begip.fr</a>
-      </div>
-      <div id="vanteauxConfirmation" style="display:none; margin-top:16px; padding:16px 20px; background:rgba(74,156,74,.15); border:1px solid rgba(74,156,74,.4); border-left:4px solid #4a9c4a; border-radius:8px; color:var(--cream); font-size:.9rem; line-height:1.6;">
-        <strong style="display:block; margin-bottom:6px;">✓ Votre demande a bien été envoyée !</strong>
-        L'équipe Begip vous recontactera du lundi au vendredi de 8h30 à 18h00.<br>
-        Pour toute urgence : <a href="tel:0555339750" style="color:#a8d5a2; font-weight:600;">05 55 33 97 50</a>
-      </div>
-      <p class="cta-form-legal">Vos données sont transmises uniquement à l'agence Begip.</p>
-    </form>
   </div>
 
 
@@ -491,29 +493,35 @@
 
 
 <style>
-  .cta-form { text-align: left; max-width: 640px; margin: 0 auto; }
+  .cta-form-card {
+    background: var(--cream); border-radius: 16px; padding: 32px;
+    max-width: 640px; margin: 32px auto; text-align: left;
+    box-shadow: 0 16px 40px rgba(0,0,0,.18);
+  }
+  .cta-form { text-align: left; }
   .cta-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
   .cta-form-group { display: flex; flex-direction: column; margin-bottom: 12px; }
   .cta-form input, .cta-form textarea {
-    padding: 12px 16px; border-radius: 10px; border: 1.5px solid rgba(255,255,255,.2);
-    background: rgba(255,255,255,.1); color: var(--cream);
+    padding: 12px 16px; border-radius: 10px; border: 1.5px solid rgba(45,74,43,.18);
+    background: #fff; color: var(--ink);
     font-family: inherit; font-size: .95rem;
     outline: none; transition: border-color .2s;
     width: 100%;
   }
-  .cta-form input::placeholder, .cta-form textarea::placeholder { color: rgba(250,246,238,.5); }
-  .cta-form input:focus, .cta-form textarea:focus { border-color: var(--sage-light); }
+  .cta-form input::placeholder, .cta-form textarea::placeholder { color: var(--ink-soft); opacity: .55; }
+  .cta-form input:focus, .cta-form textarea:focus { border-color: var(--moss); }
   .cta-form textarea { resize: vertical; }
   .cta-form-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
   .cta-btn-secondary {
-    display: inline-block; border: 1.5px solid rgba(255,255,255,.3);
-    color: rgba(250,246,238,.8); padding: 14px 28px; border-radius: 50px;
+    display: inline-block; border: 1.5px solid rgba(45,74,43,.25);
+    color: var(--forest); padding: 14px 28px; border-radius: 50px;
     font-size: .9rem; text-decoration: none;
     transition: border-color .2s, background .2s;
   }
-  .cta-btn-secondary:hover { border-color: var(--sage-light); background: rgba(255,255,255,.08); }
-  .cta-form-legal { font-size: .75rem; color: rgba(250,246,238,.5); margin-top: 12px; font-style: italic; }
+  .cta-btn-secondary:hover { border-color: var(--moss); background: var(--cream-warm); }
+  .cta-form-legal { font-size: .75rem; color: var(--ink-soft); margin-top: 12px; font-style: italic; }
   @media (max-width: 600px) {
+    .cta-form-card { padding: 24px 20px; }
     .cta-form-row { grid-template-columns: 1fr; }
     .cta-form-actions { flex-direction: column; }
     .cta-btn, .cta-btn-secondary { width: 100%; text-align: center; }
